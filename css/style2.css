@@ -1,0 +1,558 @@
+/* font-family: 'Saira Condensed', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+/* -----------------------HEADER-------------------------------------------- */
+
+header {
+    max-width: 1920px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menuBar {
+    position: relative;
+    width: 90%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+.menuBar img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 500px;
+}
+
+.menuBar nav {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -50%);
+}
+
+.menuBar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.menuBar nav ul li {
+    margin: 0 100px 0 0;
+}
+
+.menuBar nav ul li a{
+    font-family: 'Saira Condensed', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.pageImg {
+    position: relative;
+    background-image: url(/image/clock.jpg);
+    border-top: 5px solid #ffd700;
+    border-bottom: 5px solid #ffd700;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pageImg span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+    font-size: 9rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.pageImg span:nth-child(1) {
+    bottom: 40%;
+    right: 10%;
+    transform: translate(0, 50%);
+}
+
+.pageImg span:nth-child(2) {
+    bottom: 20%;
+    right: 10%;
+    transform: translate(0, 50%);
+}
+
+
+/* --------------ORIENTATION----------------------------------------- */
+
+@media (orientation: portrait) and (min-width: 320px) {
+    header {
+        height: 100vh;
+    }
+
+    .menuBar {
+        position: relative;
+        margin-top: 3%;
+        height: 20%;
+    }
+    .menuBar img {
+        top: 30%;
+        left: 0;
+        width: 280px;
+    }
+    .menuBar nav {
+        top: 80%;
+        left: -50%;
+        width: 100%;
+    }
+
+    .menuBar nav ul li {
+        margin: 0 auto;
+    }
+
+    .pageImg span {
+        font-size: 3.5rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+    
+    .pageImg span:nth-child(1) {
+        bottom: 40%;
+        right: 5%;
+        transform: translate(0, 50%);
+    }
+    
+    .pageImg span:nth-child(2) {
+        bottom: 25%;
+        right: 5%;
+        transform: translate(0, 50%);
+    }
+}
+
+@media (orientation: landscape) and (min-width: 533px) {
+    header {
+        height: 100vh;
+    }
+
+    .menuBar {
+        height: 20%;
+    }
+    .menuBar img {
+        left: 0;
+        width: 230px;
+    }
+    .menuBar nav {
+        margin: 0;
+        top: 50%;
+        left: 25%;
+        width: 50%;
+    }
+
+    .menuBar nav ul li {
+        margin: 0 auto;
+    }
+
+    .pageImg span {
+        font-size: 3.5rem;
+    }
+    
+    .pageImg span:nth-child(1) {
+        bottom: 50%;
+    }
+    
+    .pageImg span:nth-child(2) {
+        bottom: 30%;
+    }
+}
+
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header {
+        height: 100vh;
+    }
+    .menuBar img {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .pageImg span {
+        font-size: 4rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    .menuBar img {
+        width: 250px;
+    }
+
+    .pageImg span {
+        font-size: 4.2rem;
+        font-weight: 300;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 375px) {
+    .menuBar img {
+        width: 100%;
+    }
+
+    .menuBar nav ul li a{
+        height: 50px;
+        font-size: 2.2rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 812px) {
+    .menuBar img {
+        width: 250px;
+    }
+    .menuBar nav ul li a{
+        font-size: 2.3rem;
+    }
+}
+
+
+
+@media (orientation: portrait) and (min-width: 812px) {
+    .menuBar img {
+        width: 80%;
+    }
+
+    .menuBar nav ul li a {
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+    }
+
+    .pageImg span {
+        font-size: 6rem;
+        letter-spacing: 5px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menuBar img {
+        width: 400px;
+    }
+
+    .pageImg span {
+        font-size: 8rem;
+        letter-spacing: 5px;
+    }
+}
+
+/* ---------------------------SECTION ABOUT US-------------------------------- */
+
+.aboutUs {
+    position: relative;
+    font-family: 'Saira Condensed', sans-serif;
+    height: 60vh;
+    padding: 0 100px;
+}
+
+.aboutUs h1 {
+    font-size: 7rem;
+}
+
+.aboutUs p {
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.aboutUs p:nth-child(2) {
+    /* margin-top: 20px; */
+}
+
+.aboutUs p:nth-child(3) {
+    /* position: absolute; */
+    text-align: right;
+    margin: 10px 120px 0 0;
+    font-size: 3.5rem;
+}
+
+@media (orientation: portrait) and (min-width: 320px) {
+    .aboutUs {
+        height: 80vh;
+        padding: 0 20px;
+    }
+
+    .aboutUs h1 {
+        font-size: 4rem;
+    }
+
+    .aboutUs p {
+        letter-spacing: 1px;
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+    
+    .aboutUs p:nth-child(2) {
+        text-align: justify;
+        margin-top: 20px;
+    }
+    
+    .aboutUs p:nth-child(3) {
+        text-align: right;
+        margin: 10px 0 0 0;
+        font-size: 1.8rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 533px) {
+    .aboutUs {
+        height: 80vh;
+        padding: 0 20px;
+    }
+
+    .aboutUs h1 {
+        font-size: 4rem;
+    }
+
+    .aboutUs p {
+        letter-spacing: 1px;
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+    
+    .aboutUs p:nth-child(2) {
+        text-align: justify;
+    }
+    
+    .aboutUs p:nth-child(3) {
+        text-align: right;
+        letter-spacing: 1px;
+        margin: 10px 0 0 0;
+        font-size: 1.8rem;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    .aboutUs h1 {
+        font-size: 4.7rem;
+    }
+
+    .aboutUs p {
+        font-size: 1.7rem;
+    }
+    .aboutUs p:nth-child(3) {
+        font-size: 2rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    .aboutUs h1 {
+        font-size: 6rem;
+    }
+
+    .aboutUs p {
+        font-size: 1.6rem;
+    }
+    .aboutUs p:nth-child(3) {
+        font-size: 2rem;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 375px) {
+    .aboutUs h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 640px) {
+    .aboutUs h1 {
+        font-size: 6rem;
+    }
+
+    .aboutUs p {
+        font-size: 2rem;
+    }
+    .aboutUs p:nth-child(3) {
+        font-size: 2.3rem;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 812px) {
+    .aboutUs h1 {
+        font-size: 7rem;
+    }
+
+    .aboutUs p {
+        font-size: 2.3rem;
+    }
+    .aboutUs p:nth-child(3) {
+        font-size: 2.6rem;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 1024px) {
+    .aboutUs {
+        padding: 0 50px 0 50px;
+    }
+    .aboutUs h1 {
+        font-size: 8rem;
+    }
+
+    .aboutUs p {
+        font-size: 3.3rem;
+    }
+
+    .aboutUs p:nth-child(2) {
+        text-align: justify;
+    }
+    .aboutUs p:nth-child(3) {
+        font-size: 3.5rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .aboutUs {
+        padding: 0 50px 0 50px;
+    }
+    .aboutUs h1 {
+        font-size: 8rem;
+    }
+
+    .aboutUs p {
+        font-size: 3.3rem;
+    }
+    .aboutUs p:nth-child(2) {
+        text-align: justify;
+    }
+    .aboutUs p:nth-child(3) {
+        font-size: 3.5rem;
+    }
+}
+
+
+/* -------------------------------OFFERTS------------------------------------- */
+.offerts {
+    font-family: 'Saira Condensed', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+.title {
+    width: 100%;
+    height: 10vh;
+    background-color: #ffd700;
+}
+
+.title p {
+    text-align: center;
+    font-weight: bold;
+    line-height: 10%;
+    font-size: 7rem;
+}
+
+.offerts .item {
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.item:nth-child(2){
+    background-image: url(/image/utrzymanieNieruchomosci640.jpg);
+}
+.item:nth-child(3){
+    background-image: url(/image/ozonowanie640.jpg);
+}
+.item:nth-child(4){
+    background-image: url(/image/nieruchomosci640.jpg);
+}
+.item:nth-child(5){
+    background-image: url(/image/klimatyzacjaIwentylacja640.jpg);
+}
+.item:nth-child(6){
+    background-image: url(/image/zabezpieczenia640.jpg);
+}
+.item:nth-child(7){
+    background-image: url(/image/fitout640.jpg);
+}
+
+
+@media (orientation: portrait) and (min-width: 320px) {
+    .title {
+        height: 50px;
+    }
+
+    .title p {
+        line-height: 50px;
+        font-size: 3rem;
+    }
+
+    .item p {
+        color: white;
+        text-align: center;
+        line-height: 30vh;
+        background-color: rgba(0, 0, 0, .5);
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 533px) {
+    .title {
+        height: 50px;
+    }
+
+    .title p {
+        line-height: 50px;
+        font-size: 3rem;
+    }
+
+    .item p {
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, .6);
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .item {
+        float: left;
+        width: 50%;
+        height: 30vh;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+
+}
+
+@media (orientation: portrait) and (min-width: 375px) {}
+
+@media (orientation: landscape) and (min-width: 812px) {}
+
+@media (orientation: portrait) and (min-width: 812px) {}
+
+@media (orientation: landscape) and (min-width: 1024px) {}
+
+@media (orientation: portrait) and (min-width: 1024px) {}
